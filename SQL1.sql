@@ -1,0 +1,11 @@
+show databases;
+use proa;
+show tables;
+create table Aluno (id integer primary key, nome varchar(100), sobrenome varchar(100));
+create table Funcionario ( id integer primary key, nome varchar(100), sobrenome varchar(100), fucao varchar(100));
+create table Professor (id integer primary key, nome varchar(100), sobrenome varchar(100), materia varchar(100));
+insert into Aluno (id, nome, sobrenome) values (1, "Yuri", "Prado");
+insert into Aluno (id, nome, sobrenome) values (2, "Pedro", "Henrique");
+insert into Aluno (id, nome, sobrenome) values (3, "Fernanda", "Nalon");
+select * from Aluno;
+select nome from aluno where id = 2;
